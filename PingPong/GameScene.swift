@@ -41,8 +41,8 @@ class GameScene: SKScene {
     func startGame(){
         score = [0,0]
         //print(score)
-        player1score.text = "\(score[1])"
-        enemyscore.text = "\(score[0])"
+        player1score.text = "\(score[0])"
+        enemyscore.text = "\(score[1])"
     }
     
     func addScore(playerWon : SKSpriteNode){
@@ -58,8 +58,8 @@ class GameScene: SKScene {
             ball.physicsBody?.applyImpulse(CGVector(dx: -20, dy: -20))
         }
         print(score[1])
-        player1score.text = "\(score[1])"
-        enemyscore.text = "\(score[0])"
+        player1score.text = "\(score[0])"
+        enemyscore.text = "\(score[1])"
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
